@@ -18,6 +18,4 @@ app.get('/:str', function (req, res, next) {
   next();
 });
 
-app.listen(8080, function(){
-  console.log('server listening on 8080');
-});
+app.listen(process.env.PORT || 8080);
